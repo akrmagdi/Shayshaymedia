@@ -1,4 +1,4 @@
-fetch('https://6mt.fda.myftpupload.com/syscontrol/status.txt')
+fetch('https://raw.githubusercontent.com/akrmagdi/Shayshaymedia/refs/heads/main/status.text')
   .then(res => res.text())
   .then(status => {
     if (status.trim() !== 'off') return; // Only lock if status is "off"
