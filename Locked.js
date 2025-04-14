@@ -1,4 +1,4 @@
-const locked = true;
+const locked = false;
 
 if (!locked) {
   console.log("🔓 Site is unlocked — no action taken.");
