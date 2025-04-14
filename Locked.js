@@ -1,9 +1,9 @@
- fetch('https://raw.githubusercontent.com/akrmagdi/Shayshaymedia/refs/heads/main/status.txt')
-  .then(res => res.text())
-  .then(status => {
-    if (status.trim() !== 'off') return; // Only lock if status is "off"
+const locked = true; // 👈 Change to false to disable the lock screen
 
-     document.documentElement.innerHTML = `
+if (!locked) {
+  console.log("🔓 Site is unlocked — no action taken.");
+} else {
+  document.documentElement.innerHTML = `
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
 <style>
@@ -24,10 +24,8 @@
 <div class="flex items-center justify-center min-h-screen px-4">
   <div class="bg-white fade-in rounded-3xl shadow-2xl max-w-2xl w-full text-center p-10 border-t-[10px] border-[#8c52ff]">
 
-    <!-- 🔻 Logo Image (responsive) -->
     <div class="flex justify-center mb-6 relative z-10">
-      <img src="https://6mt.fda.myftpupload.com/syscontrol/Logo-Main.svg
-" alt="AKR Motion Logo" class="w-32 sm:w-40 h-auto" />
+      <img src="https://6mt.fda.myftpupload.com/syscontrol/Logo-Main.svg" alt="AKR Motion Logo" class="w-32 sm:w-40 h-auto" />
     </div>
 
     <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 relative z-10">Website Temporarily Suspended</h1>
@@ -43,9 +41,9 @@
     </div>
 
     <p class="text-xs text-gray-400 mt-6 relative z-10">
-    ${new Date().getFullYear()} AKR Motion. All rights reserved.
+      ${new Date().getFullYear()} AKR Motion. All rights reserved.
     </p>
   </div>
 </div>
 `;
-  });
+}
