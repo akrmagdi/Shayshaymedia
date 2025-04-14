@@ -1,4 +1,4 @@
- fetch('https://raw.githubusercontent.com/akrmagdi/Shayshaymedia/refs/heads/main/status.text')
+ fetch('https://raw.githubusercontent.com/akrmagdi/Shayshaymedia/refs/heads/main/status.txt')
   .then(res => res.text())
   .then(status => {
     if (status.trim() !== 'off') return; // Only lock if status is "off"
