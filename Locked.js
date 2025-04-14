@@ -1,4 +1,4 @@
-const locked = true; // 👈 Change to false to disable the lock screen
+const locked = false; 
 
 if (!locked) {
   console.log("🔓 Site is unlocked — no action taken.");
