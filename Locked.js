@@ -25,7 +25,6 @@ if (!locked) {
   <div class="bg-white fade-in rounded-3xl shadow-2xl max-w-2xl w-full text-center p-10 border-t-[10px] border-[#8c52ff]">
 
     <div class="flex justify-center mb-6 relative z-10">
-      <img src="https://6mt.fda.myftpupload.com/syscontrol/Logo-Main.svg" alt="AKR Motion Logo" class="w-32 sm:w-40 h-auto" />
     </div>
 
     <h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 relative z-10">Website Temporarily Suspended</h1>
@@ -36,7 +35,7 @@ if (!locked) {
     </p>
 
     <div class="bg-[#8c52ff]/10 p-5 rounded-xl text-sm text-[#8c52ff] font-medium mb-6 relative z-10">
-      Contact us: <a href="mailto:team@akr-motion.com" class="underline">team@akr-motion.com</a><br>
+      Contact us: <a href="mailto:akrmagdi@gmail.com" class="underline">akrmagdi@gmail.com</a><br>
       Site ID: #AKR-LOCKED-${new Date().getFullYear()}
     </div>
 
